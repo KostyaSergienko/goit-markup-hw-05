@@ -110,6 +110,7 @@ body{
 }
 
 .header-list-item{
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -117,9 +118,9 @@ body{
     letter-spacing: 0.02em; 
     padding-top: 24px;
     padding-bottom: 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 }
+
 .header-list-item:hover:after{
     content: "";
     position: absolute;
@@ -129,7 +130,6 @@ body{
     left: 0;
     bottom: -3.5px;
     border-radius: 2px; 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active::after{
@@ -141,6 +141,7 @@ body{
     left: 0;
     bottom: -3.5px;
     border-radius: 2px;
+ 
 }
 .header-list-item.active{
     color: var(--accent-color);
