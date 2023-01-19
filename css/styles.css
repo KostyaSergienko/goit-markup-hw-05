@@ -496,6 +496,32 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-be
 .footer-soc-link:focus{
     background-color: #31D0AA;
 }
+
+.footer-subscribe {
+    margin-left: 80px;
+}
+
+.subscribe-modal {}
+
+.subscribe-label {}
+
+.subscribe-wrap {}
+
+.subscribe-input {
+min-width: 264px;
+height: 40px;
+background-color: transparent;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-left: 16px;
+margin-right: 24px;
+}
+
+.subscribe-buttom {
+    
+}
+
 /* =============оформлення портфоліо=================== */
 /* оформлення мейна */
 /* .main-porfolio {
@@ -615,7 +641,7 @@ overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 584px;
+    
     width: 408px;
     padding: 28px 30px 20px;
     min-height: 576px;
@@ -721,27 +747,12 @@ overflow: hidden;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: rgba(117, 117, 117, 0.5);
+    margin-bottom: 20px;
 }
 .modal-comment:hover{
     border-color: var(--accent-color);
 }
-.modal-button{
-    /* width: 169px;
-        height: 56px;
-        background: #4D5AE5;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px; */
-}
 
-/* .button-send {
-    width: 169px;
-        height: 56px;
-        background: #4D5AE5;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        color: var(--primary-background-color);
-        border-color: var(--accent-color-btn);
-} */
 .button-send {
     font-family: var(--primary-font-family);
     font-weight: 500;
@@ -766,4 +777,25 @@ overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.user-heckbox{
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+.heckbox-policy{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--accent-color);
+}
+.modal-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

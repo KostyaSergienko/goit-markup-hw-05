@@ -383,8 +383,19 @@
                     </ul>
                 </li>
             </div>
-            
+            <div class="footer-subscribe">
+                <h3 class="footer-soc-text title">Subscribe</h3>
+                <div class="subscribe-modal">
+                    <label for="subscribe-name" class="subscribe-label"></label>
+                    <div class="subscribe-wrap">
+                        <input type="text" name="subscribe-name" class="subscribe-input" placeholder="E-mail" required>
+                        <button type="submit" class="subscribe-buttom">Subscribe</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </footer>
     <!--modal "order service"-->
     <div class="backdrop is-hidden"  data-modal>
@@ -422,13 +433,19 @@
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
-                </div>
+                </div>    
                 <div class="modal-field">
                     <label for="Comment" class="input-text">Comment</label>
                         <textarea name="Comment" id="Comment" placeholder="Text input" class="modal-comment"></textarea>
 
                 </div>
-                
+                <div class="modal-field">
+                    <label for="user-heckbox" class="user-heckbox">
+                        <div class="modal-checkbox">
+                        <input type="checkbox" name="user-heckbox" class="heckbox-text" required>
+                        I accept the terms and conditions of the <a href="" class="heckbox-policy">Privacy Policy</a></div>
+                    </label>
+                </div>
                 <div class="modal-button">
                     <button type="submit" class="button-send">Send</button>
                 </div>
