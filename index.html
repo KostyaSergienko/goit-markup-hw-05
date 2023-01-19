@@ -388,8 +388,13 @@
                 <div class="subscribe-modal">
                     <label for="subscribe-name" class="subscribe-label"></label>
                     <div class="subscribe-wrap">
-                        <input type="text" name="subscribe-name" class="subscribe-input" placeholder="E-mail" required>
-                        <button type="submit" class="subscribe-buttom">Subscribe</button>
+                        <input type="text" name="subscribe-name" id="subscribe-name" class="subscribe-input" placeholder="E-mail" required>
+                        <button type="submit" class="subscribe-buttom">Subscribe
+                            <svg class="subscribe-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-Frame"></use>
+                            </svg>
+                        </button>
+                        
                     </div>
                 </div>
             </div>
@@ -410,7 +415,7 @@
                 <div class="modal-field">
                     <label for="user-name" class="input-text">Name</label>
                     <div class="input-wrap">
-                        <input type="text" name="user-name" class="modal-input" placeholder="" required>
+                        <input type="text" name="user-name" id="user-name" class="modal-input" placeholder="" required>
                         <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
@@ -419,7 +424,7 @@
                 <div class="modal-field">
                     <label for="user-phone" class="input-text">Phone</label>
                     <div class="input-wrap">
-                        <input type="tel" name="user-phone" class="modal-input" placeholder="" required>
+                        <input type="tel" name="user-phone" id="user-phone" class="modal-input" placeholder="" required>
                         <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -428,21 +433,21 @@
                 <div class="modal-field">
                     <label for="user-email" class="input-text">Email</label>
                     <div class="input-wrap">
-                        <input type="email" name="user-email" class="modal-input" placeholder="" required>
+                        <input type="email" name="user-email" id="user-email" class="modal-input" placeholder="" required>
                         <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>    
-                <div class="modal-field">
+                <div>
                     <label for="Comment" class="input-text">Comment</label>
                         <textarea name="Comment" id="Comment" placeholder="Text input" class="modal-comment"></textarea>
 
                 </div>
-                <div class="modal-field">
+                <div class="modal-heckbox">
                     <label for="user-heckbox" class="user-heckbox">
                         <div class="modal-checkbox">
-                        <input type="checkbox" name="user-heckbox" class="heckbox-text" value="true">
+                        <input type="checkbox" name="user-heckbox" id="user-heckbox" class="heckbox-text" value="true">
                         I accept the terms and conditions of the <a href="" class="heckbox-policy">Privacy Policy</a></div>
                     </label>
                 </div>

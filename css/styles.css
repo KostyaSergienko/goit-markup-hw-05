@@ -501,11 +501,16 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-be
     margin-left: 80px;
 }
 
-.subscribe-modal {}
+/* .subscribe-modal {}
 
-.subscribe-label {}
+.subscribe-label {} */
 
-.subscribe-wrap {}
+.subscribe-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .subscribe-input {
 min-width: 264px;
@@ -519,9 +524,30 @@ margin-right: 24px;
 }
 
 .subscribe-buttom {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-background-color);
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: var(--accent-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-
+.subscribe-icon{
+margin-left: 18px;
+color: var(--primary-background-color);
+}
+.subscribe-buttom:hover,
+.subscribe-buttom:focus {
+    background-color: var(--accent-color-btn);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 /* =============оформлення портфоліо=================== */
 /* оформлення мейна */
 /* .main-porfolio {
@@ -555,7 +581,8 @@ margin-right: 24px;
     border: 1px solid #E7E9FC;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-button:hover, .portfolio-button:focus{
+.portfolio-button:hover, 
+.portfolio-button:focus{
 
     color:var(--primary-background-color);
     background-color: var(--accent-color-btn);
@@ -691,7 +718,7 @@ overflow: hidden;
     margin-bottom: 12px;
 }
 .modal-field{
-    margin-bottom: 8px;
+margin-bottom: 8px;
 }
 .input-wrap{
      position: relative;
@@ -780,13 +807,17 @@ overflow: hidden;
     
 }
 .user-heckbox{
-    margin-bottom: 24px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #757575;
 }
+.modal-heckbox{
+    margin-bottom: 24px;
+    display: flex;  
+}
+
 .heckbox-policy{
     font-weight: 400;
     font-size: 12px;
