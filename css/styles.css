@@ -525,6 +525,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-be
     border-radius: 4px;
     padding-left: 16px;
     margin-right: 24px;
+    color: rgba(255, 255, 255, 0.3);
 }
 .subscribe-input:focus{
     outline: none;
@@ -739,9 +740,14 @@ margin-bottom: 8px;
   background-color: transparent;
   padding-left: 36px;
   bottom: none;
+  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--accent-text-color);
 }
-/* .modal-input::placeholder{
-} */
+
 .input-text{
     display: inline-block;
     font-family: inherit;  
@@ -752,6 +758,7 @@ margin-bottom: 8px;
     color: #8E8F99;
     margin-bottom: 4px;
 }
+
 .input-icon{
     position: absolute;
     left: 16px;
@@ -783,8 +790,8 @@ margin-bottom: 8px;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
-    color: rgba(117, 117, 117, 0.5);
-    margin-bottom: 20px;
+    color: var(--accent-text-color);
+    /* color: rgba(117, 117, 117, 0.5); */
 }
 
 .modal-comment:focus {
@@ -818,30 +825,8 @@ margin-bottom: 8px;
     align-items: center;
     
 }
-.user-heckbox{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.04em;
-    color: #757575;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.modal-heckbox{
-    margin-bottom: 24px;
-}
-.heckbox-text{
-    margin-right: 8px;
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    content: "";
-}
 
-
-.heckbox-policy{
+.heckbox-policy {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
@@ -849,8 +834,29 @@ margin-bottom: 8px;
     color: var(--accent-color);
     margin-left: 2px;
 }
-.modal-checkbox{
+.check-text{
+font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+.check-text::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    display: block;
+    margin-right: 7px;
+}
+.input-check:checked + .check-text::before{
+    border: none;
+    background-color:var(--accent-color-btn);
+    background-image: url(../images/svg/Vector\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
